@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    filter: blur(none);
+
+}
+
+body {
+    background-color: black;
+}
+
+
+.main-box {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.child-box {
+    border: 1px solid whitesmoke;
+    position: absolute;
+    filter: blur(1px);
+    top: 50;
+    left: 50;
+    border-radius: 50%;
+}
+
+
+
+.child-box:nth-child(1) {
+    width: 450px;
+
+    height: 450px;
+    position: absolute;
+    border-radius: 50%;
+    animation-name: rotation-second-planet;
+    animation-duration: 17s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.jupiter-planet {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgb(219, 144, 87);
+    border-radius: 50%;
+    background-color: rgb(219, 144, 87);
+    position: absolute;
+    top: 7.2%;
+    left: 20%;
+}
+
+@keyframes rotation-second-planet {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+.child-box:nth-child(2) {
+    width: 390px;
+    height: 390px;
+    position: absolute;
+    border-radius: 50%;
+    animation-name: rotation-third-planet;
+    animation-duration: 13s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.third-planet {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: brown;
+    top: 33.3%;
+    position: absolute;
+}
+
+
+@keyframes rotation-third-planet {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+
+.child-box:nth-child(3) {
+    width: 320px;
+    height: 320px;
+    position: absolute;
+    border-radius: 50%;
+    animation-name: rotation-four-planet;
+    animation-duration: 11s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.four-planet{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-color: rgb(68, 97, 226);
+    border-radius: 50%;
+    top: 14.8%;
+    left: 10%;
+    animation-name: rotation-moon-planet;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.four-moon{
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    top: 151.8%;
+    left: 40%;
+
+}
+
+@keyframes rotation-moon-planet {
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+@keyframes rotation-four-planet {
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+.child-box:nth-child(4) {
+    width: 245px;
+    height: 245px;
+    position: absolute;
+    border-radius: 50%;
+    animation-name: rotation-moon-planet;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.five-planet {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgb(228, 123, 123);
+    top: 29.3%;
+    position: absolute;
+}
+
+@keyframes rotation-five-planet {
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.child-box:nth-child(5) {
+    width: 158px;
+    height: 158px;
+    position: absolute;
+    border-radius: 50%;
+    animation-name: rotation-six-planet;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.six-planet{
+    width: 16px;
+    height: 16px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    position: absolute;
+    top: 15%;
+    left: 5.3%;
+}
+
+@keyframes rotation-six-planet {
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
+
+
+
+
+.child-box:nth-child(6) {
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(224, 166, 5);
+    border: none;
+    filter: blur(0px);
+    box-shadow: 0px 0px 55px 0.1px rgb(224, 166, 5);
+
+}
+
+
+
+
+
+
+
+
+.child-box:nth-child(7) {
+    width: 517px;
+    height: 517px;
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(1px);
+    border: none;
+}
+
+
+
+
+.child-box-sunny-ring-box {
+    width: 517px;
+    height: 517px;
+    border-radius: 50%;
+    border: 1px solid rgba(245, 245, 245, 0.4);
+    animation-name: rotation-first-planet;
+    animation-duration: 19s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.sunny-ring {
+    position: absolute;
+    border: 2px solid whitesmoke;
+    width: 28px;
+    height: 18px;
+    left: 33.8%;
+    border-radius: 50%;
+    transform: rotateZ(-27deg);
+
+}
+
+.sunny-planet {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: rgb(218, 176, 143);
+    left: 23.8%;
+    border: 1px solid rgb(218, 176, 143);
+    border-radius: 50%;
+    filter: blur(0px);
+}
+
+
+@keyframes rotation-first-planet {
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
